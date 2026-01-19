@@ -4,7 +4,7 @@
 
 This system monitors industrial equipment (motors, pumps, bearings) using sensor data (temperature, vibration, pressure) to detect anomalies and predict failures before breakdowns occur. It starts with simple rule-based checks and then adds more sophisticated layers: searching for complex failure patterns, reasoning about root causes, optimizing maintenance schedules, learning to classify problems automatically, and adapting responses over time based on outcomes.
 
-Equipment monitoring uses core AI techniques: propositional logic defines normal operating conditions, search algorithms find multi-step degradation patterns, first-order logic connects symptoms to causes, optimization balances maintenance costs against downtime risks, supervised learning discovers failure patterns, and reinforcement learning adapts maintenance strategies. The system uses publicly available datasets (NASA CMAPSS, Kaggle PHM datasets) that simulate real industrial scenarios, which makes it practical to build without needing actual factory equipment or domain expertise.
+Equipment monitoring uses core AI techniques: propositional logic defines normal operating conditions, search algorithms find multi-step degradation patterns, first-order logic connects symptoms to causes, optimization balances maintenance costs against downtime risks, supervised learning discovers failure patterns, and reinforcement learning adapts maintenance strategies. The system uses publicly available datasets (NASA CMAPSS, Kaggle PHM datasets) that simulate real industrial scenarios, which makes it practical to build without needing actual factory equipment or domain experience.
 
 ## Modules
 
@@ -83,7 +83,7 @@ Equipment monitoring uses core AI techniques: propositional logic defines normal
 - Trade-off analysis showing risk versus expense for different scheduling strategies
 - Contingency plans for different failure scenarios
 
-**Integration:** Turns Module 3 diagnostics into actionable maintenance decisions. Uses game theory to model adversarial scenarios where equipment degradation (nature) competes against maintenance strategy (decision-maker), and uses optimization search to find the best timing given budget and production constraints.
+**Integration:** Turns Module 3 diagnostics into actionable maintenance decisions. Uses optimization search (hill climbing, simulated annealing) to explore the space of possible maintenance schedules. Game theory models the competitive dynamics between two actors: the decision-maker trying to minimize costs while maintaining safety, and the degradation process (nature as an adversarial player) that threatens equipment at unpredictable times. Minimax evaluates worst-case scenarios while Nash equilibrium concepts help find stable strategies that balance risk tolerance against budget constraints.
 
 **Prerequisites:** Modules 1-3; Advanced Search (Week 7.5), Game Theory (Week 9)
 
