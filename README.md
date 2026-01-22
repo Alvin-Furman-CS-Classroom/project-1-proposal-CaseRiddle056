@@ -1,4 +1,4 @@
-# Industrial Equipment Monitoring & Predictive Maintenance System
+# Industrial Equipment Monitoring & Predictive Maintenance System - Final Proposal
 
 ## System Overview
 
